@@ -37,7 +37,7 @@ From template index.php
 ####Additional Parameters:
 
 For a more customised output, you can pass over serveral parameters to the function explained below.
-
+```
 <?php simplepagehead(endtag, norobotstag, notoolbartag, favicon, generator); ?>
 
 Optional Parameters:
@@ -53,7 +53,7 @@ Example for customised call for html4 with no additional tags:
 
 Example for customised call for xhtml with no robots-tags, but favicon and notoolbar-tag
   <?php simplepagehead('/', 0, 1, 1); ?>
-
+```
   ####Trouble shooting:
   
  - Pass over either no argument, or all arguments in expected order
