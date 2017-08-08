@@ -3,12 +3,12 @@
 /**
  *  @module         SimplePageHead
  *  @version        see info.php of this module
- *  @authors        Chio, Thorn, FreeSbee
- *  @copyright      2006-2011 Chio
+ *  @authors        Chio, Thorn, FreeSbee, erpe
+ *  @copyright      2006-2017 Chio, Thorn, FreeSbee, erpe
  *  @license        GNU General Public License
  *  @license terms  see info.php of this module
  *  @platform       see info.php of this module
- *  @requirements   PHP 5.2.x and higher
+ *
  */
 
 // Function to display a nearly complete html head, also for news module pages. 
@@ -17,7 +17,7 @@
 //    simplepagehead("");   for html4
 
 // Displays: Charset, Title, Meta-Description, Meta-Keywords, Meta-Language, meta name="generator"
-// Plus (default): Link to favicon.ico (in WB_URL), no-ImageToolbar and "robots"="noindex,nofollow" on some pages.
+// Plus (default): Link to favicon.ico (in root of your installation), no-ImageToolbar and "robots"="noindex,nofollow" on some pages.
 
 
 if (!function_exists('simplepagehead')) {
@@ -126,9 +126,9 @@ if (!function_exists('simplepagehead')) {
 			echo $indexstring; 
 		}
 		
-		if ($generator == 1) {echo '<meta name="generator" content="CMS:LEPTON; http://www.lepton-cms.org"'."$endtag>\n";}
+		if ($generator == 1) {echo '<meta name="generator" content="CMS:LEPTON; https://lepton-cms.org"'."$endtag>\n";}
 		if ($notoolbartag == 1) {echo '<meta http-equiv="imagetoolbar" content="no"'."$endtag>\n"; }		
-		if ($favicon == 1) {echo '<link rel="shortcut icon" href="'.WB_URL.'/favicon.ico'."\"$endtag>\n"; }
+		if ($favicon == 1) {echo '<link rel="shortcut icon" href="'.LEPTON_URL.'/favicon.ico'."\"$endtag>\n"; }
 		
 	}
 }
