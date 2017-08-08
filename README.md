@@ -27,12 +27,13 @@ You must comment the old head section using <!-- ... --> */
 Once the module is installed, it can be invoked from the index.php file of your template.
 
 From template index.php
+```
 ...
 <head>
 <?php simplepagehead(); ?>
 <link rel="stylesheet" type="text/css" href=".....
 ...
-
+```
 ####Additional Parameters:
 
 For a more customised output, you can pass over serveral parameters to the function explained below.
