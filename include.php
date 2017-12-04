@@ -111,7 +111,7 @@ if (!function_exists('simplepagehead')) {
 		if ($the_keywords == '') { $the_keywords = $oLEPTON->page_keywords; }
 		if ($the_keywords == '') { $the_keywords = WEBSITE_KEYWORDS; }
 		
-		
+		echo "<!-- start simplepagehead -->\n";
 		echo '<meta http-equiv="Content-Type" content="text/html; charset='; if(defined('DEFAULT_CHARSET')) { echo DEFAULT_CHARSET; } else { echo 'utf-8'; } echo "\"$endtag>\n";
 		echo "<title>$the_title</title>\n";
 		echo '<meta name="description" content="'.$the_description."\"$endtag>\n";
@@ -129,7 +129,7 @@ if (!function_exists('simplepagehead')) {
 		if ($generator == 1) {echo '<meta name="generator" content="CMS:LEPTON; https://lepton-cms.org"'."$endtag>\n";}
 		if ($notoolbartag == 1) {echo '<meta http-equiv="imagetoolbar" content="no"'."$endtag>\n"; }		
 		if ($favicon == 1) {echo '<link rel="shortcut icon" href="'.LEPTON_URL.'/favicon.ico'."\"$endtag>\n"; }
-		
+		echo "<!-- end simplepagehead -->\n\n";
 	}
 }
 
