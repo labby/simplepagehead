@@ -10,7 +10,11 @@
  *  @platform       see info.php of this module
  *
  */
+ 
 
-header('Location: ../index.php');
+$PRECHECK['VERSION']        = array(
+    'VERSION' => '3.1.0',
+    'OPERATOR' => '>='
+);
 
 ?>

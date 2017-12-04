@@ -4,7 +4,7 @@
  *  @module         SimplePageHead
  *  @version        see info.php of this module
  *  @authors        Chio, Thorn, FreeSbee, erpe
- *  @copyright      2006-2017 Chio, Thorn, FreeSbee, erpe
+ *  @copyright      2006-2018 Chio, Thorn, FreeSbee, erpe
  *  @license        GNU General Public License
  *  @license terms  see info.php of this module
  *  @platform       see info.php of this module
@@ -43,14 +43,14 @@ if (!function_exists('simplepagehead')) {
 
 		// Register outside object
 		global $database;
-		global $wb;
+		global $oLEPTON;
 		global $page_id;
 		global $section_id;
 
 		// Set defaults
-		$the_title = ''; //$wb->page_title;
-		$the_description = ''; //$wb->page_description; 
-		$the_keywords = ''; //$wb->page_keywords;
+		$the_title = ''; //$oLEPTON->page_title;
+		$the_description = ''; //$oLEPTON->page_description; 
+		$the_keywords = ''; //$oLEPTON->page_keywords;
 
 		// Look for the module name of the current section		
 		if(isset($page_id) && isset($section_id)) {
@@ -84,7 +84,7 @@ if (!function_exists('simplepagehead')) {
 		}
 
 		if ($the_description == '') {
-			$the_description = $wb->page_description;
+			$the_description = $oLEPTON->page_description;
 		}
 		else {
 			$the_description = str_replace('"', '', $the_description); 
@@ -101,14 +101,14 @@ if (!function_exists('simplepagehead')) {
 			}
 		}
 		
-		if ($the_title=='') {$the_title = $wb->page_title; }
+		if ($the_title=='') {$the_title = $oLEPTON->page_title; }
 		if (strlen($the_title) < 15) {$the_title = WEBSITE_TITLE. " - " .$the_title; }
 		
 
-		if ($the_description == '') { $the_description = $wb->page_description; }
+		if ($the_description == '') { $the_description = $oLEPTON->page_description; }
 		if ($the_description == '') { $the_description = WEBSITE_DESCRIPTION; }
 		
-		if ($the_keywords == '') { $the_keywords = $wb->page_keywords; }
+		if ($the_keywords == '') { $the_keywords = $oLEPTON->page_keywords; }
 		if ($the_keywords == '') { $the_keywords = WEBSITE_KEYWORDS; }
 		
 		

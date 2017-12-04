@@ -4,7 +4,7 @@ Snippet to generate head tags (title, keywords.. )
 
 #### Requirements
 
-* [LEPTON CMS][1], Version >= 2.x
+* [LEPTON CMS][1], Version >= 3.x
 
 #### Installation
 

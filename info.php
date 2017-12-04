@@ -4,7 +4,7 @@
  *  @module         SimplePageHead
  *  @version        see info.php of this module
  *  @authors        Chio, Thorn, FreeSbee, erpe
- *  @copyright      2006-2017 Chio, Thorn, FreeSbee, erpe
+ *  @copyright      2006-2018 Chio, Thorn, FreeSbee, erpe
  *  @license        GNU General Public License
  *  @license terms  see info.php of this module
  *  @platform       see info.php of this module
@@ -14,8 +14,8 @@
 $module_directory     = 'simplepagehead';
 $module_name          = 'SimplePageHead';
 $module_function      = 'snippet';
-$module_version       = '0.5.2';
-$module_platform      = '2.x';
+$module_version       = '0.5.3';
+$module_platform      = '3.x';
 $module_author        = 'Chio, Thorn, FreeSbee, erpe';
 $module_license       = 'GNU General Public License';
 $module_terms         = 'none';
