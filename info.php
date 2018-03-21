@@ -14,8 +14,8 @@
 $module_directory     = 'simplepagehead';
 $module_name          = 'SimplePageHead';
 $module_function      = 'snippet';
-$module_version       = '0.5.3';
-$module_platform      = '3.x';
+$module_version       = '0.6.0';
+$module_platform      = '4.x';
 $module_author        = 'Chio, Thorn, FreeSbee, erpe';
 $module_license       = 'GNU General Public License';
 $module_terms         = 'none';
